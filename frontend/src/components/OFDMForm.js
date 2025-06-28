@@ -28,7 +28,7 @@ const OFDMForm = () => {
 
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:5000/api/ofdm', {
+      const response = await fetch('https://wireless-backend-v1s9.onrender.com/api/ofdm', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(inputs)
